@@ -1,0 +1,76 @@
+.task-card {
+  background-color: rgb(250, 247, 246);
+  border-radius: 5px;
+  border: 0.001rem solid #ccc;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  padding: 10px;
+  margin: 10px;
+}
+
+.header {
+  background-color: #e1f5fe;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 8px 16px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Arial;
+}
+
+.body {
+  padding: 10px 2px 2px 2px;
+}
+
+.description {
+  padding-left: 16px;
+  font-size: 18px;
+  font-family: "Comic Sans MS";
+}
+
+.divider {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 7px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+  .button-group button {
+    flex: 1; /* add this line */
+    border-radius: 20px;
+    color: #ffffff;
+    background-color: #007bff;
+    padding: 5px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    margin-inline: 3px;
+  }
+
+    .button-group button:hover {
+      background-color: #0069d9;
+    }
+
+    .button-group button:disabled {
+      background-color: #6c757d;
+      cursor: not-allowed;
+    }
+
+      .button-group button:disabled:hover {
+        background-color: #6c757d;
+      }

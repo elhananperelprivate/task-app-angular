@@ -1,0 +1,13 @@
+<h1 mat-dialog-title class="dialog-header">{{ data.title ? 'Edit Task' : 'Add Task' }}</h1>
+<div mat-dialog-content class="dialog-content">
+  <mat-form-field>
+    <input matInput [(ngModel)]="title" placeholder="Task Title" autofocus>
+  </mat-form-field>
+  <mat-form-field>
+    <textarea matInput [(ngModel)]="description" placeholder="Task Description"></textarea>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions class="dialog-actions">
+  <button mat-button (click)="onCancel()">Cancel</button>
+  <button mat-button [disabled]="!title" (click)="onSave()">Save</button>
+</div>

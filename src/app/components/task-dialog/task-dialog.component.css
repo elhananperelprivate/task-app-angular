@@ -1,0 +1,22 @@
+.dialog-header {
+  background-color: #95b8f3;
+}
+
+.dialog-content {
+  background-color: rgba(241, 231, 231, 0.9);
+  margin-top: 12px;
+}
+
+.dialog-actions {
+  background-color: #b2ccb2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+  .dialog-actions button {
+    background-color: #afb8e0;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-color: darkslategray;
+  }

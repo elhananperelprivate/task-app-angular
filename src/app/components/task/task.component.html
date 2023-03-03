@@ -1,0 +1,22 @@
+<div class="task-card mat-elevation-z4">
+  <div class="header">
+    <div class="title">{{ task.title | titlecase}}</div>
+  </div>
+  <div class="body">
+    <div class="description">{{ task.description }}</div>
+  </div>
+  <hr class="divider">
+  <div class="footer">
+    <div class="button-group">
+      <div *ngIf="!task.completed" matTooltip="Someone is editing this task" [matTooltipDisabled]="!editing">
+        <button mat-raised-button (click)="onEdit()" [disabled]="editing">Edit</button>
+      </div>
+      <div matTooltip="Someone is editing this task" [matTooltipDisabled]="!editing">
+        <button mat-raised-button (click)="onDelete()" [disabled]="editing">Delete</button>
+      </div>
+      <div *ngIf="!task.completed" matTooltip="Someone is editing this task" [matTooltipDisabled]="!editing">
+        <button mat-raised-button (click)="onComplete()" [disabled]="editing">Complete</button>
+      </div>
+    </div>
+  </div>
+</div>
